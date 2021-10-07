@@ -1,2 +1,2 @@
 # Regrid_NC_CDO
-How to regrid NC files using CDO
+Read the How_to_description to see examples on how to regrid NC files using CDO.
