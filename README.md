@@ -1,4 +1,4 @@
-# Regrid_NC_CDO
+# Resample or Aggregate NC files
 
 Can use command line and CDO to aggregate or resample entire NC files. CDO homepage: https://code.mpimet.mpg.de/projects/cdo  
 
