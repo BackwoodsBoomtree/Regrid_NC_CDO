@@ -1,7 +1,9 @@
 # Regrid_NC_CDO
 
 Can use command line and CDO to aggregate or resample entire NC files. CDO homepage: https://code.mpimet.mpg.de/projects/cdo  
+
 This page is helpful for describing regridding: https://code.mpimet.mpg.de/projects/cdo/wiki/Tutorial#Interpolation  
+
 Basic CDO and nc commands for taking a look at your data, and some basic usage: https://code.mpimet.mpg.de/projects/cdo/wiki/Tutorial  
 
 ## Methods
