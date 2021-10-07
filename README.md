@@ -33,9 +33,9 @@ where targetgrid is a grid file and -f is output file type.
 
 Can use a gridfile to explicitly define output. See grid files in this repo. Examples and descriptions are below.
 
-Example:
-gridtype  = lonlat\n
-gridsize  = 64800
+Example: 
+gridtype  = lonlat 
+gridsize  = 64800 
 datatype  = float
 xsize     = 360
 ysize     = 180
