@@ -33,22 +33,22 @@ where targetgrid is a grid file and -f is output file type.
 
 Can use a gridfile to explicitly define output. See grid files in this repo. Examples and descriptions are below.
 
-Example: 
-gridtype  = lonlat 
-gridsize  = 64800 
-datatype  = float
-xsize     = 360
-ysize     = 180
-xname     = longitude
-xlongname = "Longitude"
-xunits    = "degrees_east"
-yname     = latitude
-ylongname = "Latitude"
-yunits    = "degrees_north"
-xfirst    = -179.5
-xinc      = 1
-yfirst    = -89.5
-yinc      = 1
+Example:  
+gridtype  = lonlat  
+gridsize  = 64800  
+datatype  = float  
+xsize     = 360  
+ysize     = 180  
+xname     = longitude  
+xlongname = "Longitude"  
+xunits    = "degrees_east"  
+yname     = latitude  
+ylongname = "Latitude"  
+yunits    = "degrees_north"  
+xfirst    = -179.5  
+xinc      = 1  
+yfirst    = -89.5  
+yinc      = 1  
 
 
 ![image](https://user-images.githubusercontent.com/31934468/136450401-caf21d8a-9e02-4591-9b00-c2ef5002dadb.png)
