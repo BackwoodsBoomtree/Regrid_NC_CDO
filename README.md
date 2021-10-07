@@ -5,12 +5,12 @@ This page is helpful for describing regridding: https://code.mpimet.mpg.de/proje
 Basic CDO and nc commands for taking a look at your data, and some basic usage: https://code.mpimet.mpg.de/projects/cdo/wiki/Tutorial
 
 ## Methods
-Horizontal interpolation can be done with the CDO operators:
-remapbil - Bilinear interpolation
-remapbic - Bicubic interpolation
-remapdis - Distance-weighted average remapping
-remapnn - Nearest neighbor remapping
-remapcon - First order conservative remapping
+Horizontal interpolation can be done with the CDO operators:  
+remapbil - Bilinear interpolation  
+remapbic - Bicubic interpolation  
+remapdis - Distance-weighted average remapping  
+remapnn - Nearest neighbor remapping  
+remapcon - First order conservative remapping  
 
 ## Install
 install cdo to your linux using:
