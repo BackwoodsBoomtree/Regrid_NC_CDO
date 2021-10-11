@@ -23,8 +23,23 @@ If you get a package not found error, run:
 
 sudo apt-get update
 
-## Example commands
+On mac-os, to install cdo, ran:
 
+brew install cdo
+
+## Example commands
+by default, can ran:
+$ cdo remapcon,r360x180 ifile ofile
+
+% this function makes 360 columns and 180 rows based on the lon and lat of your input file
+% eg. if resample 1deg map from 4by5 map, by default the center is -89.75 and edge is -89.5;
+% if you desire to define the edges exactly as you need (eg. -90 on left edge, center point be -89.5)
+% then you need to write a txt file to define your own values, name the file gridfile.txt and run:
+
+$ cdo -remapcon,gridfile.txt ifile ofile
+
+
+# other example commands
 $ cdo remapbil,targetgrid ifile ofile
 
 $ cdo -f nc remapcon,r360x180 ifile.nc ofile.nc
@@ -35,7 +50,7 @@ where targetgrid is a grid file and -f is output file type.
 
 You can use a gridfile to explicitly define output. See grid files in this repo. Examples and descriptions are below.
 
-Example:  
+An example for regridding to 1by1 degree:  
 gridtype  = lonlat  
 gridsize  = 64800  
 datatype  = float  
