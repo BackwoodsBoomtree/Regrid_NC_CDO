@@ -17,7 +17,7 @@ remapcon2- Second order conservative remapping
 see this paper for the differences of con and con2: https://journals.ametsoc.org/view/journals/mwre/127/9/1520-0493_1999_127_2204_fasocr_2.0.co_2.xml
 
 ## Install
-install cdo to your linux using:
+### install cdo to your linux, use:
 
 sudo apt-get install cdo
 
@@ -25,7 +25,7 @@ If you get a package not found error, run:
 
 sudo apt-get update
 
-On mac-os, to install cdo, ran:
+### On mac-os, to install cdo, run:
 
 brew install cdo
 
@@ -33,10 +33,10 @@ brew install cdo
 by default, can ran:
 $ cdo remapcon,r360x180 ifile ofile
 
-% this function makes 360 columns and 180 rows based on the lon and lat of your input file
-% eg. if resample 1deg map from 4by5 map, by default the center is -89.75 and edge is -89.5;
-% if you desire to define the edges exactly as you need (eg. -90 on left edge, center point be -89.5)
-% then you need to write a txt file to define your own values, name the file gridfile.txt and run:
+% this function makes 360 columns and 180 rows based on the lon and lat of your input file.
+eg. if resample 1deg map from 4by5 map, by default the center is -89.75 and edge is -89.5;
+If you desire to define the edges exactly as you need (eg. -90 on left edge, center point be -89.5),
+then you need to write a txt file to define your own values, name the file gridfile.txt and run:
 
 $ cdo -remapcon,gridfile.txt ifile ofile
 
