@@ -13,6 +13,8 @@ remapbic - Bicubic interpolation
 remapdis - Distance-weighted average remapping  
 remapnn - Nearest neighbor remapping  
 remapcon - First order conservative remapping  
+remapcon2- Second order conservative remapping 
+see this paper for the differences of con and con2: https://journals.ametsoc.org/view/journals/mwre/127/9/1520-0493_1999_127_2204_fasocr_2.0.co_2.xml
 
 ## Install
 install cdo to your linux using:
