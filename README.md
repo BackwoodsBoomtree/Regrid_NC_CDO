@@ -30,7 +30,8 @@ sudo apt-get update
 brew install cdo
 
 ## Example commands
-by default, can ran:
+by default, can run:
+
 $ cdo remapcon,r360x180 ifile ofile
 
 % this function makes 360 columns and 180 rows based on the lon and lat of your input file.
@@ -41,7 +42,7 @@ then you need to write a txt file to define your own values, name the file gridf
 $ cdo -remapcon,gridfile.txt ifile ofile
 
 
-## other example commands
+## Other example commands
 $ cdo remapbil,targetgrid ifile ofile
 
 $ cdo -f nc remapcon,r360x180 ifile.nc ofile.nc
