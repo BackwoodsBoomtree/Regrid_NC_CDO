@@ -41,7 +41,7 @@ then you need to write a txt file to define your own values, name the file gridf
 $ cdo -remapcon,gridfile.txt ifile ofile
 
 
-# other example commands
+## other example commands
 $ cdo remapbil,targetgrid ifile ofile
 
 $ cdo -f nc remapcon,r360x180 ifile.nc ofile.nc
@@ -68,6 +68,19 @@ xfirst    = -179.5
 xinc      = 1  
 yfirst    = -89.5  
 yinc      = 1  
+
+## Renaming for NC files created in R
+
+# NC files created by R (terra) need to have the proj and grid_mapping paramaters renamed
+beg_cmd_rename_crs = ''.join(['ncrename -a crs@proj4,proj_params '])
+for i in range(len(in_files)):
+    cmd_rename_crs = ' '.join([beg_cmd_rename_crs, in_files[i]])
+    os.system(cmd_rename_crs)
+    
+beg_cmd_rename_grid = ''.join(['ncrename -a ', var_name, '@grid_mapping,grid_mapping_name '])
+for i in range(len(in_files)):
+    cmd_rename_grid = ' '.join([beg_cmd_rename_grid, in_files[i]])
+    os.system(cmd_rename_grid)
 
 
 ![image](https://user-images.githubusercontent.com/31934468/136450401-caf21d8a-9e02-4591-9b00-c2ef5002dadb.png)
