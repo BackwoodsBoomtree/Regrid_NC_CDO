@@ -71,7 +71,7 @@ yinc      = 1
 
 ## Renaming for NC files created in R
 
-# NC files created by R (terra) need to have the proj and grid_mapping paramaters renamed
+* NC files created by R (terra) need to have the proj and grid_mapping paramaters renamed
 beg_cmd_rename_crs = ''.join(['ncrename -a crs@proj4,proj_params '])
 for i in range(len(in_files)):
     cmd_rename_crs = ' '.join([beg_cmd_rename_crs, in_files[i]])
